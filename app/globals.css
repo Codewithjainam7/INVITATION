@@ -28,8 +28,7 @@
     /* 100dvh handled on containers */
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
-    overscroll-behavior: none;
-    /* Prevent bounce on desktop/iOS */
+    /* Allow browser gestures like pull-to-refresh */
   }
 
   /* Custom Gold Scrollbar */

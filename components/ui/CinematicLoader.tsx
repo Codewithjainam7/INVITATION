@@ -12,8 +12,11 @@ export default function CinematicLoader({ onComplete }: { onComplete: () => void
         const t2 = setTimeout(() => setCount(1), 1600);
         // Switch to logo
         const t3 = setTimeout(() => setPhase("logo"), 2400);
-        // Start fade out
-        const t4 = setTimeout(() => setOpacity(0), 4200);
+        // Start fade out and disable pointer events
+        const t4 = setTimeout(() => {
+            setOpacity(0);
+            setPhase("done");
+        }, 4200);
         // Complete
         const t5 = setTimeout(() => onComplete(), 5000);
 
@@ -33,6 +36,7 @@ export default function CinematicLoader({ onComplete }: { onComplete: () => void
                 opacity,
                 transition: "opacity 0.8s ease-in-out",
                 overflow: "hidden",
+                pointerEvents: phase === "done" ? "none" : "auto",
             }}
         >
             {/* Scanlines */}
