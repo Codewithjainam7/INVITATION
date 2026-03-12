@@ -20,8 +20,8 @@ export function LenisProvider({ children }: { children: React.ReactNode }) {
                 lerp: 0.1,
                 duration: 1.5,
                 smoothWheel: true,
-                wheelMultiplier: isUnlocked ? 1 : 0,
-                touchMultiplier: isUnlocked ? 2 : 0,
+                wheelMultiplier: 1,
+                touchMultiplier: 1.5,
             }}
         >
             {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}

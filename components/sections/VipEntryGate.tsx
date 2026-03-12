@@ -106,7 +106,7 @@ export default function VipEntryGate() {
             <ConfettiCanvas trigger={stage === "unlocked"} />
 
             <motion.div
-                className="fixed inset-0 z-[1000] flex flex-col items-center justify-center bg-black p-5"
+                className="fixed inset-0 z-[1000] bg-black overflow-y-auto px-5 py-20 flex flex-col items-center"
                 initial={{ opacity: 1 }}
                 animate={{ opacity: stage === "unlocked" ? 0 : 1, y: stage === "unlocked" ? -50 : 0 }}
                 transition={{ duration: 0.8, ease: "easeInOut", delay: stage === "unlocked" ? 2 : 0 }}
