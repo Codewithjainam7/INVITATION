@@ -53,6 +53,7 @@ export default function SquadAwards() {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6 }}
                 className="w-full max-w-xl mx-auto"
+                style={{ willChange: "transform, opacity" }}
             >
                 <div className="text-center mb-10">
                     <h2 className="font-display text-3xl md:text-4xl text-gold mb-4">🏆 Squad Awards</h2>

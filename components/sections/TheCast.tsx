@@ -89,7 +89,8 @@ export default function TheCast() {
                                 whileHover={{ scale: 1.02 }}
                                 className="glass-cinema relative flex-shrink-0 snap-center md:snap-none flex flex-col items-center text-center p-8 pt-10 w-[85vw] max-w-[340px] md:w-[calc(33.33%-1rem)] lg:w-[calc(20%-1.2rem)] min-h-[380px]"
                                 style={{
-                                    borderColor: `var(--border-gold)`
+                                    borderColor: `var(--border-gold)`,
+                                    willChange: "transform, opacity"
                                 }}
                             >
                                 {/* Colored Glow Border on Hover */}

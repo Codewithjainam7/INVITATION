@@ -73,15 +73,15 @@ export default function Home() {
         <div className="relative z-10 w-full flex flex-col items-center px-[16px]">
           {isUnlocked && loaderDone && (
             <Suspense fallback={null}>
-              <HeroSection />
-              <PartyDetails />
-              <TheCast />
-              <Countdown />
-              <DialogueGen />
-              <EmojiMovieQuiz />
-              <RoleSlotMachine />
-              <SquadAwards />
-              <MovieQuoteTyper />
+              <div style={{ contentVisibility: 'auto' }} className="w-full flex flex-col items-center"><HeroSection /></div>
+              <div style={{ contentVisibility: 'auto' }} className="w-full flex flex-col items-center"><PartyDetails /></div>
+              <div style={{ contentVisibility: 'auto' }} className="w-full flex flex-col items-center"><TheCast /></div>
+              <div style={{ contentVisibility: 'auto' }} className="w-full flex flex-col items-center"><Countdown /></div>
+              <div style={{ contentVisibility: 'auto' }} className="w-full flex flex-col items-center"><DialogueGen /></div>
+              <div style={{ contentVisibility: 'auto' }} className="w-full flex flex-col items-center"><EmojiMovieQuiz /></div>
+              <div style={{ contentVisibility: 'auto' }} className="w-full flex flex-col items-center"><RoleSlotMachine /></div>
+              <div style={{ contentVisibility: 'auto' }} className="w-full flex flex-col items-center"><SquadAwards /></div>
+              <div style={{ contentVisibility: 'auto' }} className="w-full flex flex-col items-center"><MovieQuoteTyper /></div>
               <Footer />
             </Suspense>
           )}

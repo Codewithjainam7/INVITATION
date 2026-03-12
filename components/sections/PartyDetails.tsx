@@ -29,6 +29,7 @@ export default function PartyDetails() {
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative w-full max-w-5xl aspect-[3/2] rounded-2xl overflow-hidden mb-12 border border-gold/30 shadow-[0_0_60px_rgba(255,215,0,0.2)]"
+                style={{ willChange: "transform, opacity" }}
             >
                 <img
                     src="/w2.png"

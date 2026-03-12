@@ -121,10 +121,11 @@ export default function HeroSection() {
                                         style={{
                                             display: "inline-block",
                                             textShadow: isGlowing
-                                                ? "0 0 20px rgba(255, 215, 0, 0.9), 0 0 40px rgba(255, 215, 0, 0.6), 0 0 80px rgba(255, 215, 0, 0.3)"
-                                                : "0 0 10px rgba(255, 215, 0, 0.15)",
+                                                ? "0 0 15px rgba(255, 215, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.4)"
+                                                : "0 0 5px rgba(255, 215, 0, 0.1)",
                                             color: isGlowing ? "#FFFBE6" : "#FFD700",
-                                            transition: "text-shadow 0.15s ease, color 0.15s ease",
+                                            transition: "text-shadow 0.1s ease, color 0.1s ease",
+                                            willChange: "transform, opacity, text-shadow"
                                         }}
                                     >
                                         {char}
